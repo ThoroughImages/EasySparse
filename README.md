@@ -27,12 +27,12 @@ This project naturally fits into scenarios when one uses TensorFlow to build dee
 
 ## Environment
 1. Spark v2.0
-2. TensorFlow v0.12.1
+2. TensorFlow >= v0.12.1
 
 ## Python Package Requirements
 1. Numpy (required)
 2. Sci-kit Learn (only required in `test.py`)
-3. TensorFlow (required, <= v0.12.1)
+3. TensorFlow (required, >= v0.12.1)
 
 ## Implementation Notes
 1. In the training process, `train.py` reads all the validation data from the LibSVM file into the memory, and harvests shuffled training batches from the TFRecord file. Meanwhile, in the test process, all the test data is read from the LibSVM file. Therefore, one does not need to convert validation and test LibSVM files to TFRecords. However, this implementation may not work when validation and test sets are too large to fit into the memory. Although it rarely happens since validation and test sets are usually much smaller than the training set. If that happens, one need to write TFRecord file queues for validation and test sets.
