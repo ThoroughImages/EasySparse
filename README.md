@@ -6,7 +6,7 @@ In production environments, we find TensorFlow poorly deals with sparse learning
 This project naturally fits into scenarios when one uses TensorFlow to build deep learning models by data acquired from Spark. Other scenarios can be easily generalized.
 
 ## Data Flow
-<div align=center><img alt="DataFlow" width="600" src="https://raw.githubusercontent.com/physicso/EasySparse/master/resources/dataflow.png?token=AHRW7C9KADnlyhWQ6kZVq5LobYx7wdOpks5Y3N85wA%3D%3D"/></div>
+<div align=center><img alt="DataFlow" width="600" src="https://raw.githubusercontent.com/physicso/EasySparse/master/resources/dataflow.png?token=AHRW7Ometh9dYztWjUtByclE69R35wQjks5Z_y4UwA%3D%3D"/></div>
 
 ## Programs
 `spark_to_libsvm.scala`  Read data from Spark to a LibSVM file while one-hot encode features by demand.
